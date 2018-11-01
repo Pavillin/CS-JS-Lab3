@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <!-- Third-Party CDNs -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <title>Lab 03 - The DOM</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="my-5">
+        <h1>Lab 05 - The DOM</h1>
+      </header>
+
+      <p style="color: red;">
+        <strong>INSTRUCTIONS:</strong> Complete the steps below as instructed and hand in by the end of day for full marks. Hand in by Sunday @midnight for a 20% deduction.
+      </p>
+
+      <section id="example">
+        <ul id="firstRow">
+          <li class="cardStyle">K</li>
+          <li class="cardStyle">2</li>
+          <li class="cardStyle">5</li>
+          <li class="cardStyle">9</li>
+          <li class="cardStyle">7</li>
+          <li class="cardStyle">J</li>
+          <li class="cardStyle">A</li>
+        </ul>
+
+        <ul id="secondRow">
+          <li class="cardStyle">queen</li>
+          <li class="cardStyle">three</li>
+          <li class="cardStyle">five</li>
+          <li class="cardStyle">six</li>
+          <li class="cardStyle">four</li>
+          <li class="cardStyle">jack</li>
+          <li class="cardStyle">eight</li>
+        </ul>
+      </section>
+      
+      <h3 id="myFavouriteCard"></h3>
+
+      <hr>
+      
+      <section>
+        <header class="my-5">
+          <h2>Part One</h2>
+        </header>
+
+        <ol>
+          <li>Select and Store all the card values in the HTML page.</li>
+          <li>Using "Walk the DOM" select and store all the card values in the first &lt;ul&gt;</li>
+          <li>Using "Walk the DOM" select and store all the card values in the second &lt;ul&gt;</li>
+        </ol>
+      </section>
+      
+      <hr>
+
+      <section>
+        <header class="my-5">
+          <h2>Part Two</h2>
+        </header>
+
+        <ol start="4">
+          <li>Select and store the #myFavouriteCard div element.</li>
+          <li>Iterate through the firstRow NodeList and change the background colour of each element to #3498db and the text colour to #fff.</li>
+          <li>Iterate through the secondRow NodeList and change the text to uppercase.</li>
+          <li>Create a new object with your first name as the object name. ie: const bob = {}</li>
+          <li>Add the name and age properties with your name and age as values.</li>
+          <li>Add a property called 'favCard' with one of the cards from the first or second row as the value. <strong>NOTE:</strong> You must access the card from the firstRow variable, not just type the value in.</li>
+          <li>Add the following as text content to the #myFavouriteCard element: `{name} is {age} years old and their favourite card is {favCard}.` replacing the {variable} with the appropriate values.</li>
+        </ol>
+      </section>
+
+      <hr>
+    </div>
+
+    <footer class="my-5"></footer>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+  
+</html>
